@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms and Media Example</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Media Gallery </h1>
+        <nav>
+            <ul>
+                <li><a href="">Form</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Media Gallery</h2>
+        <article>
+            <h3>Sample Image</h3>
+            <img src="download.jpg" alt="Sample Image">
+        </article>
+        <article>
+            <h3>Sample Audio</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </article>
+        <article>
+            <h3>Sample Video</h3>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+        <article>
+            <h3>Sample Iframe</h3>
+            <iframe src="https://www.example.com" width="300" height="200" title="Example Site"></iframe>
+        </article>
+    </section>
+    <section>
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic" required>
+                <option value="">Select...</option>
+                <option value="general">General</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Media Gallery</p>
+    </footer>
+</body>
+</html>
